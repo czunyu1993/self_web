@@ -1,3 +1,6 @@
+.nav-block-mobile {
+	display: none;
+}
 
 .body-div {
 	/* position */
@@ -150,4 +153,31 @@ footer {
 	/* font */
 	font-family: 'Lora';
 	color: #ffffff;
+}
+
+
+/****** mobile view ******/
+@media only screen and (max-width: 992px){
+	.nav-block-large {
+		display: none;
+	}
+
+	.nav-block-mobile {
+		display: block;
+	}
+
+	.nav-button-div {
+		display: inline-block;
+		width: 28%;
+		height: 50px;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.nav-icon-div-mobile {
+		width: 20%;
+		margin-left: 10%;
+		margin-right: 40%;
+	}
 }
