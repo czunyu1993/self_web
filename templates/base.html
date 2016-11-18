@@ -1,15 +1,74 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta charset="UTF-8">
+    <title>Zunyu Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+
+    <!-- CSS -->
+	<link rel="stylesheet" href="/static/css/style.css" />
+
+    <!-- JS -->
     <script type="text/javascript" src="/static/js/main.js"></script>
-    <title>TEST WEBSITE</title>
+
+	<!-- icon -->
+	<link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
-  <div class="center">
-    {% block content %}{% endblock %}
-  </div>
+<div class="body-div">
+    <header>
+        <nav>
+            <div class="nav-block">
+                <div class="nav-ul-block nav-ul-left-block">
+                    <ul class="nav-ul nav-ul-left">
+                        <li class="nav-ul-li"><a href="#">About</a></li>
+                        <li class="nav-ul-li"><a href="#">Resume</a></li>
+                    </ul>
+                </div>
+                <div class="nav-icon-div">
+                    <img class="nav-icon" src="/static/images/terminal-icon.png" alt="nav icon" />
+                </div>
+                <div class="nav-ul-block nav-ul-right-block">
+                    <ul class="nav-ul nav-ul-right">
+                        <li class="nav-ul-li"><a href="#">Project</a></li>
+                        <li class="nav-ul-li"><a href="#">Resouces</a></li>
+                    </ul>
+                </div>
+            </div>
 
+        </nav>
+        <div id="header-content">
+            {% block header_content %}
+            {% endblock %}
+        </div>
+    </header>
+
+    <div class="content-block">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+    <footer>
+        <p>Copyright &copy; Zunyu Chen | 2016</p>
+    </footer>
+</div>
 </body>
-
 </html>
