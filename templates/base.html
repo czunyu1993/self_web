@@ -39,11 +39,11 @@
 <!-- side nav (only in mobile view) -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/"><span class="bold-spacing">Home</span></a>
-  <a href="/works">Works</a>
-  <a href="/">Hobbies</a>
-  <a href="/">Resume</a>
-  <a href="/">Contact</a>
+  <a href="{{ url_for('main.main_route') }}"><span class="bold-spacing">Home</span></a>
+  <a href="{{ url_for('main.works_route') }}">Works</a>
+  <a href="{{ url_for('main.hobbies_route') }}">Hobbies</a>
+  <a href="{{ url_for('main.resume_route') }}">Resume</a>
+  <a href="{{ url_for('main.contact_route') }}">Contact</a>
 </div>
 
 <!-- !!!!! BODY !!!!! -->
@@ -53,17 +53,17 @@
             <div class="nav-block nav-block-large">
                 <div class="nav-ul-block nav-ul-left-block">
                     <ul class="nav-ul nav-ul-left">
-                        <li class="nav-ul-li"><a href="/works">Works</a></li>
-                        <li class="nav-ul-li"><a href="#">Hobbies</a></li>
+                        <li class="nav-ul-li"><a href="{{ url_for('main.works_route') }}">Works</a></li>
+                        <li class="nav-ul-li"><a href="{{ url_for('main.hobbies_route') }}">Hobbies</a></li>
                     </ul>
                 </div>
                 <div class="nav-icon-div">
-                    <a href="/"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
+                    <a href="{{ url_for('main.main_route') }}"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
                 </div>
                 <div class="nav-ul-block nav-ul-right-block">
                     <ul class="nav-ul nav-ul-right">
-                        <li class="nav-ul-li"><a href="#">Resume</a></li>
-                        <li class="nav-ul-li"><a href="#">Contact</a></li>
+                        <li class="nav-ul-li"><a href="{{ url_for('main.resume_route') }}">Resume</a></li>
+                        <li class="nav-ul-li"><a href="{{ url_for('main.contact_route') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <span onclick="openNav()"><img class="nav-icon" src="/static/images/navbar-button.png" alt="nav icon" /></span>
                 </div>
                 <div class="nav-icon-div nav-icon-div-mobile">
-                    <a href="/"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
+                    <a href="{{ url_for('main.main_route') }}"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
                 </div>
             </div>
 
