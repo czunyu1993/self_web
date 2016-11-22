@@ -35,32 +35,44 @@
 </head>
 
 <body>
-<div class="body-div">
+
+<!-- side nav (only in mobile view) -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/"><span class="bold-spacing">Home</span></a>
+  <a href="/works">Works</a>
+  <a href="/">Hobbies</a>
+  <a href="/">Resume</a>
+  <a href="/">Contact</a>
+</div>
+
+<!-- !!!!! BODY !!!!! -->
+<div id="body-div">
     <header>
         <nav>
             <div class="nav-block nav-block-large">
                 <div class="nav-ul-block nav-ul-left-block">
                     <ul class="nav-ul nav-ul-left">
-                        <li class="nav-ul-li"><a href="/">About</a></li>
-                        <li class="nav-ul-li"><a href="#">Resume</a></li>
+                        <li class="nav-ul-li"><a href="/works">Works</a></li>
+                        <li class="nav-ul-li"><a href="#">Hobbies</a></li>
                     </ul>
                 </div>
                 <div class="nav-icon-div">
-                    <img class="nav-icon" src="/static/images/terminal-icon.png" alt="nav icon" />
+                    <a href="/"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
                 </div>
                 <div class="nav-ul-block nav-ul-right-block">
                     <ul class="nav-ul nav-ul-right">
-                        <li class="nav-ul-li"><a href="#">Project</a></li>
-                        <li class="nav-ul-li"><a href="#">Resouces</a></li>
+                        <li class="nav-ul-li"><a href="#">Resume</a></li>
+                        <li class="nav-ul-li"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="nav-block nav-block-mobile">
                 <div class="nav-button-div">
-                    <img class="nav-icon" src="/static/images/terminal-icon.png" alt="nav icon" />
+                    <span onclick="openNav()"><img class="nav-icon" src="/static/images/navbar-button.png" alt="nav icon" /></span>
                 </div>
                 <div class="nav-icon-div nav-icon-div-mobile">
-                    <img class="nav-icon" src="/static/images/terminal-icon.png" alt="nav icon" />
+                    <a href="/"><img class="nav-icon" src="/static/images/superball-2.jpg" alt="nav icon" /></a>
                 </div>
             </div>
 
