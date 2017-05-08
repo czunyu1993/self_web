@@ -1,8 +1,12 @@
 .content-block {
-	color: #ffffff;
-	font-size: 200%;
-	font-family: 'Lora';
-	margin-left: 7%;
-	margin-right: 7%;
-	font-family: 'VT323', monospace;
+
+}
+
+#header-content {
+	margin: auto;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
 }

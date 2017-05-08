@@ -50,7 +50,7 @@
 
 #body-div {
 	position: relative;
-	height: 750px;
+	height: auto;
 	margin: auto;
 	background-color: #0f8cbd;
 }
@@ -66,8 +66,8 @@ header {
 	margin-right: 15%;
 	margin-top: 50px;
 	margin-bottom: 30px;
-	font-family: 'VT323', monospace;
-	font-size: 180%;
+	font-family: 'Viga', sans-serif;
+	font-size: 150%;
 	color: #ffffff;
 }
 #header-content p {
@@ -183,11 +183,13 @@ header {
 /* CONTENT PART */
 .content-block {
 	color: #ffffff;
-	font-size: 200%;
-	font-family: 'Lora';
+	font-size: 150%;
 	margin-left: 7%;
 	margin-right: 7%;
-	font-family: 'VT323', monospace;
+	font-family: 'Varela', sans-serif;
+}
+#content-bottom-space {
+	height: 120px;
 }
 
 /* FOOTER PART */

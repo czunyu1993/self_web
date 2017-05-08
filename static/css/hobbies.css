@@ -1,14 +1,5 @@
-#body-div {
-	height: auto;
-}
-
 .content-block {
-	color: #ffffff;
-	font-size: 200%;
-	font-family: 'Lora';
-	margin-left: 5%;
-	margin-right: 5%;
-	font-family: 'VT323', monospace;
+
 }
 
 .hobbies-block-all {
@@ -40,6 +31,3 @@
 	margin-right: 0;
 }
 
-#hobbies-bottom-space {
-	height: 100px;
-}
