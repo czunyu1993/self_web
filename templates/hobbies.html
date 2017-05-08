@@ -1,11 +1,47 @@
 {% extends "base.html" %}
 
+{% block head_content %}
+    <link rel="stylesheet" href="/static/css/hobbies.css">
+{% endblock %}
+
 {% block header_content %}
     <h1>HOBBIES</h1>
 {% endblock %}
 
 {% block content %}
+    <div class="hobbies-block-all">
     <p>
-      THIS IS HOBBIES PART.
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 1</p>
+        </div>
+
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 2</p>
+        </div>
+
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 3</p>
+        </div>
     </p>
+    <p>
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 4</p>
+        </div>
+
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 5</p>
+        </div>
+
+        <div class="hobby-block">
+            <img class="hobby-img" src="/static/images/white-bg.png" alt="" />
+            <p class="hobby-name">HOBBY 6</p>
+        </div>
+    </p>
+    </div>
+    <div id="hobbies-bottom-space"></div>
 {% endblock %}
